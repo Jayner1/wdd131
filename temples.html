@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temples - Jason Yale</title>
+    <meta name="description" content="This is a temple album page. In mobile view it will show a hamburger menu.">
+    <meta name="author" content="Jason Yale">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Temple Album</h1>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links">
+                <a href="#" onclick="updateTitle('Home')">Home</a>
+                <a href="#" onclick="updateTitle('Old')">Old</a>
+                <a href="#" onclick="updateTitle('New')">New</a>
+                <a href="#" onclick="updateTitle('Large')">Large</a>
+                <a href="#" onclick="updateTitle('Small')">Small</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 id="page-title" class="page-title">Home</h1>
+        <div class="grid-container">
+            <figure>
+                <img src="images/temple1.jpg" alt="Columbia River">
+                <figcaption>Columbia River</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Salt Lake">
+                <figcaption>Salt Lake</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple3.jpg" alt="Provo">
+                <figcaption>Provo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple4.jpg" alt="Sao Paulo">
+                <figcaption>Sao Paulo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple5.jpg" alt="Tokyo">
+                <figcaption>Tokyo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple6.jpg" alt="Spokane">
+                <figcaption>Spokane</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple7.jpg" alt="Rexburg">
+                <figcaption>Rexburg</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple8.jpg" alt="Jordan River">
+                <figcaption>Jordan River</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple9.jpg" alt="Seattle">
+                <figcaption>Seattle</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightYear">YYYY</span> Jason Yale - Washington</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+</body>
+</html>
