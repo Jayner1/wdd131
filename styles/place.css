@@ -1,4 +1,3 @@
-/* General styles */
 body {
     background-color: yellow;
     margin: 0;
@@ -58,27 +57,24 @@ footer {
     text-align: center;
 }
 
-/* Positioning and styling the weather icon pseudo-element */
 #weather h2::after {
     content: "";
     display: inline-block;
-    width: 30px; /* Adjust width as needed */
-    height: 30px; /* Adjust height as needed */
-    background-image: url("../images/weather.svg"); /* Ensure the path is correct */
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/weather.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 8px; /* Adjust margin as needed for spacing */
+    margin-left: 8px;
 }
 
 
-/* Large view styles */
 @media (min-width: 1024px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-/* Mobile view styles */
 @media (max-width: 1023px) {
     main {
         grid-template-rows: auto auto auto;

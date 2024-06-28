@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     document.addEventListener("DOMContentLoaded", function() {
-        var temperature = 23; // static temperature value in Celsius
-        var windSpeed = 16; // static wind speed value in km/h
+        var temperature = 23;
+        var windSpeed = 16; 
 
         var windChill = calculateWindChill(temperature, windSpeed);
         document.getElementById("wind-chill").textContent = `Wind Chill: ${windChill.toFixed(2)}° C`;
