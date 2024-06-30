@@ -46,7 +46,7 @@ const temples = [
         location: "Washington, USA",
         dedicated: "2001-11-18",
         area: 16000,
-        imageUrl: "images/temple1.jpg"
+        imageUrl: "images/temple1.webp"
     },
     {
         name: "Salt Lake",
