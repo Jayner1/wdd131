@@ -14,27 +14,31 @@
         <h1>Brasil</h1>
     </header>
     <main>
-        <img src="images/christ.webp" 
-             srcset="images/flag.webp 1023w, images/christ.webp 1024w" 
-             sizes="(max-width: 1023px) 100vw, 100vw" 
-             alt="Christ" id="main-image">
+        <picture>
+            <source srcset="images/christ.webp" media="(min-width: 850px)">
+            <img src="images/flag.webp" alt="Responsive Image">
+        </picture>
         <section id="data">
             <h2>Data</h2>
-                <ul>Area: 8,514,215 km&sup2</ul>
-                <ul>Population: 215.3 Million</ul>
-                <ul>Capital: Brasilia</ul>
-                <ul>Languages: Portuguese</ul>
-                <ul>Currency: Real</ul>
-                <ul>Time Zone: GMT-2 - GMT-5</ul>
-                <ul>Calling Code: +55</ul>
-                <ul>Internet TLD: .br</ul>
+            <ul>
+                <li>Area: 8,515,767 km²</li>
+                <li>Population: 213 million</li>
+                <li>Capital: Brasília</li>
+                <li>Languages: Portuguese</li>
+                <li>Currency: Brazilian Real</li>
+                <li>Time Zone: BRT (UTC-3)</li>
+                <li>Calling Code: +55</li>
+                <li>Internet TLD: .br</li>
+            </ul>
         </section>
         <section id="weather">
             <h2>Weather</h2>
-                <ul>Temperature: 23&deg;C</ul>
-                <ul>Conditions: Partly Cloudy</ul>
-                <ul>Wind: 11 km/h</ul>
-                <ul id="wind-chill">Wind Chill</ul>
+            <ul>
+                <li>Temperature: 23&deg;C</li>
+                <li>Conditions: Partly Cloudy</li>
+                <li>Wind: 11 km/h</li>
+                <li id="wind-chill">Wind Chill</li>
+            </ul>
         </section>
     </main>
 </body>

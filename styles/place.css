@@ -11,6 +11,7 @@ main {
     background-color: yellow;
 }
 
+picture,
 img {
     width: 100%;
     grid-column: span 3;
@@ -45,7 +46,6 @@ section {
 
 section h2 {
     position: relative;
-    left: -10px;
     background-color: darkblue;
     color: yellow;
     padding-left: 5px;
@@ -57,7 +57,7 @@ footer {
     text-align: center;
 }
 
-#weather h2::after {
+#weather h2::before {
     content: "";
     display: inline-block;
     width: 30px;
@@ -65,24 +65,18 @@ footer {
     background-image: url("../images/weather.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 8px;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
-
-@media (min-width: 1024px) {
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media (max-width: 1023px) {
+@media (max-width: 849px) {
     main {
         grid-template-rows: auto auto auto;
     }
 
     #data, #weather {
         position: relative;
-        left: 70px;
+        left: 138px;
         top: auto;
         width: 260px;
         margin: 10px 0;
@@ -96,5 +90,33 @@ footer {
 
     #weather {
         grid-row: 3;
+    }
+
+    #data h2,
+    #weather h2 {
+        background-color: yellow;
+        color: green;
+        text-align: center;
+    }
+
+    #weather h2::before {
+        display: none;
+    }
+
+    #weather h2::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-image: url("../images/weather.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 8px auto 0;
+    }
+}
+
+@media (min-width: 850px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
