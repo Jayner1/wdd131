@@ -104,7 +104,6 @@ const temples = [
         area: 110000,
         imageUrl: "images/temple9.webp"
     },
-    
     {
         name: "Lima",
         location: "Lima, Perú",
