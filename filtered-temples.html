@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temples - Jason Yale</title>
+    <meta name="description" content="This is a temple album page. In mobile view it will show a hamburger menu.">
+    <meta name="author" content="Jason Yale">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large-filtered.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Temple Album</h1>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links">
+                <a href="#" onclick="updateTitle('Home')">Home</a>
+                <a href="#" onclick="updateTitle('Old')">Old</a>
+                <a href="#" onclick="updateTitle('New')">New</a>
+                <a href="#" onclick="updateTitle('Large')">Large</a>
+                <a href="#" onclick="updateTitle('Small')">Small</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 id="page-title" class="page-title">Home</h1>
+        <div class="grid-container" id="temple-cards-container">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightYear">YYYY</span> Jason Yale - Washington</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+</body>
+</html>
