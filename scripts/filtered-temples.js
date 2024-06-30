@@ -53,56 +53,56 @@ const temples = [
         location: "Utah, USA",
         dedicated: "1893-04-06",
         area: 253000,
-        imageUrl: "images/temple2.jpg"
+        imageUrl: "images/temple2.webp"
     },
     {
         name: "Provo",
         location: "Utah, USA",
         dedicated: "1972-02-09",
         area: 128325,
-        imageUrl: "images/temple3.jpg"
+        imageUrl: "images/temple3.webp"
     },
     {
         name: "São Paulo",
         location: "São Paulo, Brazil",
         dedicated: "1978-10-30",
         area: 103215,
-        imageUrl: "images/temple4.jpg"
+        imageUrl: "images/temple4.webp"
     },
     {
         name: "Tokyo",
         location: "Tokyo, Japan",
         dedicated: "1980-10-27",
         area: 52549,
-        imageUrl: "images/temple5.jpg"
+        imageUrl: "images/temple5.webp"
     },
     {
         name: "Spokane",
         location: "Washington, USA",
         dedicated: "1999-08-21",
         area: 10842,
-        imageUrl: "images/temple6.jpg"
+        imageUrl: "images/temple6.webp"
     },
     {
         name: "Rexburg",
         location: "Idaho, USA",
         dedicated: "2008-02-10",
         area: 57330,
-        imageUrl: "images/temple7.jpg"
+        imageUrl: "images/temple7.webp"
     },
     {
         name: "Jordan River",
         location: "Utah, USA",
         dedicated: "1981-11-16",
         area: 148236,
-        imageUrl: "images/temple8.jpg"
+        imageUrl: "images/temple8.webp"
     },
     {
         name: "Seattle",
         location: "Washington, USA",
         dedicated: "1980-11-17",
         area: 110000,
-        imageUrl: "images/temple9.jpg"
+        imageUrl: "images/temple9.webp"
     },
     
     {
@@ -110,21 +110,21 @@ const temples = [
         location: "Lima, Perú",
         dedicated: "1986-01-10",
         area: 9600,
-        imageUrl: "images/temple13.jpg"
+        imageUrl: "images/temple13.webp"
     },
     {
         name: "Rome",
         location: "Rome, Italy",
         dedicated: "2019-03-10",
         area: 377000,
-        imageUrl: "images/temple11.jpg"
+        imageUrl: "images/temple11.webp"
     },
     {
         name: "Paris",
         location: "Paris, France",
         dedicated: "2017-05-21",
         area: 44425,
-        imageUrl: "images/temple12.jpg"
+        imageUrl: "images/temple12.webp"
     }
 ];
 
