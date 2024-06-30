@@ -135,7 +135,6 @@ footer {
     color: white;
 }
 
-/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
