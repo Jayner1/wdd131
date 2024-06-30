@@ -63,7 +63,7 @@ const temples = [
         imageUrl: "images/temple3.jpg"
     },
     {
-        name: "Sao Paulo",
+        name: "São Paulo",
         location: "São Paulo, Brazil",
         dedicated: "1978-10-30",
         area: 103215,
@@ -106,7 +106,7 @@ const temples = [
     },
     
     {
-        name: "Lima Perú",
+        name: "Lima",
         location: "Lima, Perú",
         dedicated: "1986-01-10",
         area: 9600,
