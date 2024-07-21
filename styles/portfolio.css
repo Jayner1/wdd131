@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    background: rgb(147,120,91);
+    background: linear-gradient(0deg, rgba(147,120,91,1) 0%, rgba(134,93,54,1) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+header {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background-color: #865D36;
+    position: relative; 
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 10px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    align-items: center; 
+}
+
+.nav-links a {
+    display: block;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        order: 1; 
+        padding-right: 10px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        right: 0; 
+        background-color: #93785B;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px 0;
+        z-index: 1000; 
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 96px); 
+    width: 100%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.me {
+    grid-column: 1 / 2;
+    border-color: #93785B;
+    border-width: 10px;
+    border-style: solid;
+    height: 500px;
+    width: auto;
+    max-width: 100%;
+}
+
+.text-content {
+    grid-column: 2 / 3;
+    padding-left: 20px;
+}
+
+h1, h2 {
+    font-family: "Kanit", sans-serif;
+    padding-left: 10px;
+}
+
+h3, p {
+    font-family: "Arsenal", sans-serif;
+    padding-left: 10px;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #865D36;
+    border-radius: 8px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-item img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.contact-item img:hover {
+    transform: scale(1.1);
+}
+
+.contact-text {
+    font-family: "Arsenal", sans-serif;
+}
+
+.message {
+    text-align: center;
+}
+
+.message h2 {
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+.message p {
+    font-family: "Arsenal", sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #865D36;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        margin-bottom: 20px;
+    }
+
+    .contact-item img {
+        height: 30px; 
+    }
+}
